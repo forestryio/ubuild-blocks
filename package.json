@@ -7,7 +7,11 @@
     "build": "postcss -o ./dist/css/ubuild.css ./src/css/styles.css"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Forestry.io",
+    "email": "support@forestry.io",
+    "url": "https://forestry.io"
+  },
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^3.10.0",
