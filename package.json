@@ -1,0 +1,20 @@
+{
+  "name": "forestry-blocks-styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".postcssrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss -o ./dist/css/main.css ./src/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^5.0.1",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-scss": "^1.0.5",
+    "precss": "^3.1.2"
+  }
+}
