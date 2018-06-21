@@ -1,11 +1,10 @@
 {
-  "name": "forestry-blocks-styles",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".postcssrc.js",
+  "name": "ubuild-blocks",
+  "version": "0.1.0",
+  "description": "uBuild is a CSS toolkit for building modular page components.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss -o ./dist/css/main.css ./src/css/styles.css"
+    "build": "postcss -o ./dist/css/ubuild.css ./src/css/styles.css"
   },
   "keywords": [],
   "author": "",
