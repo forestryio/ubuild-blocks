@@ -1,7 +1,7 @@
 # uBuild Blocks
 
-uBuild is a CSS toolkit for creating modular page components. uBuild was designed to work with [Forestry]()'s [Blocks]() feature, and
- provide uniform component styles for the [ubuild-jekyll]() theme as well as uBuild themes created for other static site generators.
+uBuild is a CSS toolkit for creating modular page components. uBuild was designed to work with [Forestry](https://forestry.io/)'s [Blocks](https://forestry.io/blog/blocks-give-your-editors-the-power-to-build-pages/) feature, and
+ provide uniform component styles for the [ubuild-jekyll](https://github.com/forestryio/ubuild-jekyll) theme as well as uBuild themes created for other static site generators.
 
 ## Usage
 
