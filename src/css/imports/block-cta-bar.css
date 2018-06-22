@@ -24,6 +24,9 @@
 
 .block-cta-bar .cta {
   flex: 0 0 100%;
+}
+
+.block-cta-bar .cta form {
   text-align: right;
   display: flex;
   align-items: stretch;

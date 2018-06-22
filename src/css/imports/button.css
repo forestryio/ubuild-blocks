@@ -8,6 +8,7 @@
   cursor: pointer;
   position: relative;
   user-select: none;
+  text-decoration: none;
 }
 
 .button:hover {
