@@ -8,7 +8,7 @@ uBuild is a CSS toolkit for creating modular page components. uBuild was designe
 You can load the uBuild stylesheet from the jsdelivr cdn:
 
 ```
-<link rel="stylesheet" type="text" href="https://cdn.jsdelivr.net/gh/forestryio/ubuild-blocks/dist/css/ubuild.css" />
+<link rel="stylesheet" type="text" href="https://cdn.jsdelivr.net/gh/forestryio/ubuild-blocks@1.0.0/dist/css/ubuild.css" />
 ```
 
 Check out the [examples](https://github.com/forestryio/ubuild-blocks/tree/master/examples) to see what blocks are available.
