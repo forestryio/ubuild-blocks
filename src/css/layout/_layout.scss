@@ -1,0 +1,25 @@
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+// Grid
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$ub-gutter;
+}
+
+.column {
+  flex: 1;
+  margin: $ub-gutter;
+  
+  &.is-full { flex: 0 0 calc(100% - #{$ub-gutter}); }
+  &.is-half { flex: 0 0 calc(50% - #{$ub-gutter}); }
+  &.is-one-third { flex: 0 0 calc(33.33% - #{$ub-gutter}); }
+  &.is-one-quarter { flex: 0 0 calc(25% - #{$ub-gutter}); }
+
+}

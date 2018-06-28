@@ -1,0 +1,22 @@
+// Colors - Theme
+$ub-color-primary: #ffcb3c;
+$ub-color-secondary: #dcdcdc;
+
+// Colors - Theme shades
+$ub-color-dark-0: darken($ub-color-primary, 0.2);
+$ub-color-dark-1: darken($ub-color-primary, 0.4);
+$ub-color-dark-2: darken($ub-color-primary, 0.6);
+
+// Colors - Theme tints
+$ub-color-light-0: lighten($ub-color-primary, 0.2);
+$ub-color-light-1: lighten($ub-color-primary, 0.4);
+$ub-color-light-2: lighten($ub-color-primary, 0.6);
+
+// Colors - Base
+$ub-color-white: rgb(255,255,255);
+$ub-color-black: rgb(0,0,0);
+
+// Colors - Greyscale
+$ub-color-greyscale-0: rgb(245,245,245);
+$ub-color-greyscale-1: rgb(220,220,220);
+$ub-color-greyscale-2: rgb(150,150,150);
