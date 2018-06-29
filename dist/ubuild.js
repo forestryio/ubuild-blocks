@@ -99,7 +99,15 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_scss__WEBPACK_IMPORTED_MODULE_0__);
- // Dropdown toggle
+ // Add css file to html document in production
+
+if (true) {
+  var link = document.createElement('link');
+  link.href = 'main.css';
+  link.rel = 'stylesheet';
+  document.getElementsByTagName('head')[0].appendChild(link);
+} // Dropdown toggle
+
 
 var dropdown = document.querySelector('.dropdown');
 document.addEventListener('click', function (event) {

@@ -1,5 +1,13 @@
 import './css/style.scss'
 
+// Add css file to html document in production
+if (process.env.NODE_ENV === 'production') {
+  const link = document.createElement('link')
+  link.href='main.css'
+  link.rel='stylesheet'
+  document.getElementsByTagName('head')[0].appendChild(link);
+}
+
 // Dropdown toggle
 const dropdown = document.querySelector('.dropdown')
 document.addEventListener('click', function(event) {
