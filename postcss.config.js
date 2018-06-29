@@ -7,11 +7,8 @@ module.exports = function(ctx = {}) {
     const isProduction = (opts.env === "production") || (process.env.NODE_ENV === "production")
   
     return {
-      parser: "postcss-scss",
       plugins: {
-        "precss": {},
-        "postcss-cssnext": {},
-        "cssnano": {},
+        "autoprefixer": {},
       }
     }
   }

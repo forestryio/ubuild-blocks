@@ -1,12 +1,11 @@
-const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const merge = require('webpack-merge')
+const common = require('./webpack.common.js')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'ubuild_min.js',
-    path: path.resolve(__dirname, 'dist')
-  },
+process.env.NODE_ENV = 'production'
+
+module.exports = merge(common, {
+  mode: 'production',
   plugins: [
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
@@ -39,10 +38,13 @@ module.exports = {
             loader: 'css-loader'
           },
           {
+            loader: 'postcss-loader'
+          },
+          {
             loader: 'sass-loader'
           }
         ]
       }
     ]
   }
-};
+})
