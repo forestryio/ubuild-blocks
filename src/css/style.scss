@@ -39,7 +39,8 @@ $red:          hsl(348, 100%, 61%) !default;
 // Color usage
 $primary: $yellow !default;
 $primary-invert: $black-ter !default;
-$background: $white-ter !default;
+$navbar-background-color: transparent;
+$background: $white !default;
 $text: $grey-dark !default;
 $text-light: $grey !default;
 
@@ -54,7 +55,7 @@ $pre-background: $background !default;
 // Miscellaneous
 $easing: ease-out !default;
 $radius-small: 2px !default;
-$radius: 0.3rem !default;
+$radius: 4px !default;
 $radius-large: 6px !default;
 $radius-rounded: 290486px !default;
 $speed: 86ms !default;

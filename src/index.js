@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
-// Check for fixed nav
+// Check for fixed nav and add class to the
+// body element to make room for it, unless it's transparent.
 const nav = document.querySelector('.navbar')
 if (nav) {
-  console.log('We got a nav!!')
-  if (nav.classList.contains('is-fixed-top')) {
+  if (nav.classList.contains('is-fixed-top') && !nav.classList.contains('is-transparent')) {
     document.body.classList.add('has-navbar-fixed-top')
   }
   if (nav.classList.contains('is-fixed-bottom')) {
