@@ -1,6 +1,7 @@
 const path = require('path')
 const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 process.env.NODE_ENV = 'development'
 
@@ -12,8 +13,22 @@ module.exports = merge(common, {
     open: true,
     overlay: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/html/index.html"
+    })
+  ],
   module: {
     rules: [
+      { test: /\.(html)$/,
+        include: path.resolve(__dirname, 'src/html'),
+        use: {
+          loader: 'html-loader',
+          options: {
+            interpolate: true
+          }
+        }
+      },
       {
         test: /\.(sass|scss)$/,
         use: [

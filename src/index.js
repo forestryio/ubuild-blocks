@@ -49,13 +49,25 @@ if (nav) {
 
 // Dropdown toggle
 const dropdown = document.querySelector('.dropdown')
-document.addEventListener('click', function(event) {
-  var isClickInside = dropdown.contains(event.target)
-  dropdown.classList.toggle('is-active')
-  if (!isClickInside) {
-    dropdown.classList.remove('is-active')
-  }
-})
+const navDropdown = document.querySelector('.navbar-item.has-dropdown')
+if (dropdown) {
+  document.addEventListener('click', function(event) {
+    var isClickInside = dropdown.contains(event.target)
+    dropdown.classList.toggle('is-active')
+    if (!isClickInside) {
+      dropdown.classList.remove('is-active')
+    }
+  })    
+}
+if (navDropdown) {
+  document.addEventListener('click', function(event) {
+    var isClickInside = navDropdown.contains(event.target)
+    navDropdown.classList.toggle('is-active')
+    if (!isClickInside) {
+      navDropdown.classList.remove('is-active')
+    }
+  })    
+}
 
 // Console credit
 console.info('Built with uBuild blocks theme (https://github.com/forestryio/ubuild-blocks)')

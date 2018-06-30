@@ -40,6 +40,7 @@ $red:          hsl(348, 100%, 61%) !default;
 $primary: $yellow !default;
 $primary-invert: $black-ter !default;
 $navbar-background-color: transparent;
+$navbar-divider-background-color: $grey-lighter;
 $background: $white !default;
 $text: $grey-dark !default;
 $text-light: $grey !default;
@@ -53,6 +54,7 @@ $pre-background: $background !default;
 
 
 // Miscellaneous
+$navbar-divider-height: 1px !default;
 $easing: ease-out !default;
 $radius-small: 2px !default;
 $radius: 4px !default;
