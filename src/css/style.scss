@@ -39,8 +39,9 @@ $red:          hsl(348, 100%, 61%) !default;
 // Color usage
 $primary: $yellow !default;
 $primary-invert: $black-ter !default;
-$navbar-background-color: transparent;
+$navbar-background-color: $white;
 $navbar-divider-background-color: $grey-lighter;
+$navbar-dropdown-arrow: $grey-light;
 $background: $white !default;
 $text: $grey-dark !default;
 $text-light: $grey !default;
@@ -79,3 +80,9 @@ $code-size: 0.875em !default;
 @import "~bulma/sass/components/_all";
 @import "~bulma/sass/grid/_all";
 @import "~bulma/sass/layout/_all";
+
+// Overrides
+
+.navbar-item {
+  font-size: $size-7;
+}
