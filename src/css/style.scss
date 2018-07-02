@@ -38,10 +38,10 @@ $red:          hsl(348, 100%, 61%) !default;
 
 // Color usage
 $primary: $yellow !default;
-$primary-invert: $black-ter !default;
-$navbar-background-color: $white;
-$navbar-divider-background-color: $grey-lighter;
-$navbar-dropdown-arrow: $grey-light;
+$primary-invert: $grey-darker !default;
+$navbar-background-color: $white !default;
+$navbar-divider-background-color: $grey-lighter !default;
+$navbar-dropdown-arrow: $grey-light !default;
 $background: $white !default;
 $text: $grey-dark !default;
 $text-light: $grey !default;
@@ -56,6 +56,7 @@ $pre-background: $background !default;
 
 
 // Miscellaneous
+$control-border-width: 1px !default;
 $navbar-divider-height: 1px !default;
 $easing: ease-out !default;
 $radius-small: 2px !default;
@@ -63,6 +64,12 @@ $radius: 4px !default;
 $radius-large: 6px !default;
 $radius-rounded: 290486px !default;
 $speed: 86ms !default;
+
+
+// button
+$button-border-width: $control-border-width !default;
+$button-padding-vertical: calc(1.6em - #{$button-border-width}) !default;
+$button-padding-horizontal: 2em !default;
 
 
 @import "~bulma/sass/utilities/_all";
@@ -82,10 +89,23 @@ $code-size: 0.875em !default;
 @import "~bulma/sass/grid/_all";
 @import "~bulma/sass/layout/_all";
 
+
+// Custom
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 // Overrides
 
 .navbar-item {
   font-size: $size-7;
+}
+
+.hero.hero-1 {
+  background-size: cover;
 }
 
 .footer.footer-1 {

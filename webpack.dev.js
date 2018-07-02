@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: 'development',
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
-    port: 9000,
+    port: 8080,
     open: true,
     overlay: true,
   },
@@ -29,6 +29,7 @@ module.exports = merge(common, {
           }
         }
       },
+      { test: /\.png$/, use: [ "file-loader" ] },
       {
         test: /\.(sass|scss)$/,
         use: [
@@ -57,7 +58,7 @@ module.exports = merge(common, {
             }
           }
         ]
-      }
+      },
     ]
   }
 })
