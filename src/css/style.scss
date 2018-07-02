@@ -45,6 +45,7 @@ $navbar-dropdown-arrow: $grey-light;
 $background: $white !default;
 $text: $grey-dark !default;
 $text-light: $grey !default;
+$footer-background-color: $white !default;
 
 
 // Code colors
@@ -85,4 +86,8 @@ $code-size: 0.875em !default;
 
 .navbar-item {
   font-size: $size-7;
+}
+
+.footer.footer-1 {
+  padding: 6rem 1.5rem;
 }
