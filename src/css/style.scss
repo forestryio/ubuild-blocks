@@ -98,21 +98,6 @@ $code-size: 0.875em !default;
   justify-content: center;
 }
 
-.hero-1-cta {
-  margin-top: 1rem;
-}
 
-
-// Overrides
-
-.navbar-item {
-  font-size: $size-7;
-}
-
-.hero.hero-1 {
-  background-size: cover;
-}
-
-.footer.footer-1 {
-  padding: 6rem 1.5rem;
-}
+@import "blocks/block-hero-1";
+@import "overrides";
