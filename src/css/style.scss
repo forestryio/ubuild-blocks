@@ -98,6 +98,9 @@ $code-size: 0.875em !default;
   justify-content: center;
 }
 
+// Blocks
+@import "blocks/block-hero-1",
+        "blocks/block-text-1";
 
-@import "blocks/block-hero-1";
+// Overrides
 @import "overrides";
