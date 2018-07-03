@@ -1,9 +1,16 @@
 .block-header-2 {
+
   .navbar-brand { justify-content: center; }
   .navbar-primary { justify-content: flex-start; }
   .navbar-secondary { justify-content: flex-end; }
+
+  + .block-hero-2 {
+    margin-top: -2rem;
+  }
+
   @media screen and (min-width: $desktop) {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
 }

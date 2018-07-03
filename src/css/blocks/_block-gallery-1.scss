@@ -1,0 +1,18 @@
+.block-gallery-1 {
+
+  .block-gallery-1--item {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: opacity $speed $easing;
+
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+  }
+
+}
