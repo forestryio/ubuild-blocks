@@ -57,7 +57,7 @@ if (dropdown) {
     if (!isClickInside) {
       dropdown.classList.remove('is-active')
     }
-  })    
+  })
 }
 if (navDropdown) {
   document.addEventListener('click', function(event) {
@@ -66,7 +66,7 @@ if (navDropdown) {
     if (!isClickInside) {
       navDropdown.classList.remove('is-active')
     }
-  })    
+  })
 }
 
 // Console credit

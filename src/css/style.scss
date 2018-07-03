@@ -100,7 +100,10 @@ $code-size: 0.875em !default;
 
 // Blocks
 @import "blocks/block-hero-1",
+        "blocks/block-hero-2",
+        "blocks/block-header-2",
         "blocks/block-text-1";
+
 
 // Overrides
 @import "overrides";
